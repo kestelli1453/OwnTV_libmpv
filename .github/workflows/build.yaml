@@ -4,6 +4,7 @@ name: Build
 # (tools/inspect_aar.py). publish.yaml and monthly-update.yaml call this same workflow, so a
 # published or proposed AAR is held to exactly the same checks.
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
